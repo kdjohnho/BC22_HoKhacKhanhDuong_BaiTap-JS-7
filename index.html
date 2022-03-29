@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Title</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="card">
+			<div class="card-header">BÀI TẬP JS 7</div>
+			<div class="card-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group">
+								<input
+									id="inputValue"
+									type="text"
+									class="form-control"
+									placeholder="Nhập vào 1 số nguyên"
+								/>
+							</div>
+							<button id="btnAddNum" class="btn btn-success">Thêm số</button>
+							<div
+								class="bg-warning mt-4"
+								style="line-height: 40px; border-radius: 4px"
+							>
+								<span class="ml-2">Dãy số nhập vào: </span>
+								<span id="showArray"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer bg-white">
+				<button id="btnQ1" class="btn btn-info">Tổng các số dương</button>
+				<button id="btnQ2" class="btn btn-info">Số lượng các số dương</button>
+				<button id="btnQ3" class="btn btn-info">Tìm số nhỏ nhất</button>
+				<button id="btnQ4" class="btn btn-info">Tìm số dương nhỏ nhất</button>
+				<button id="btnQ5" class="btn btn-info">
+					Tìm số chẵn cuối cùng trong mảng
+				</button>
+			</div>
+			<div class="card-footer text-muted">
+				<div id="result1">
+					1. Tổng các số dương trong mảng:
+					<span id="showResult1"></span>
+				</div>
+				<div id="result2">
+					2. Số lượng các số dương:
+					<span id="showResult2"></span>
+				</div>
+				<div id="result3">
+					3. Số nhỏ nhất trong mảng:
+					<span id="showResult3"></span>
+				</div>
+				<div id="result4">
+					4. Số dương nhỏ nhất trong mảng:
+					<span id="showResult4"></span>
+				</div>
+				<div id="result5">
+					5. Số chẵn cuối cùng trong mảng:
+					<span id="showResult5"></span>
+				</div>
+			</div>
+
+			<div class="card-footer bg-white">
+				Câu 6
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group">
+								<input
+									id="arrIndex1"
+									type="text"
+									class="form-control"
+									placeholder="Đổi chỗ vị trí thứ ..."
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									id="arrIndex2"
+									type="text"
+									class="form-control"
+									placeholder="Với vị trí thứ ..."
+								/>
+							</div>
+							<button id="btnQ6" class="btn btn-info">Đổi chỗ</button>
+							<div
+								class="bg-warning mt-4"
+								style="line-height: 40px; border-radius: 4px"
+							>
+								<span class="ml-2">Sau khi đổi chỗ: </span>
+								<span id="showNewArray"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card-footer bg-white">
+				<button id="btnQ7" class="btn btn-info">Sắp xếp tăng dần</button>
+				<button id="btnQ8" class="btn btn-info">Số nguyên tố đầu tiên</button>
+			</div>
+			<div class="card-footer text-muted">
+				<div id="result7">
+					7. Sắp xếp tăng dần:
+					<span id="showResult7"></span>
+				</div>
+				<div id="result8">
+					8. Số nguyên tố đầu tiên trong mảng:
+					<span id="showResult8"></span>
+				</div>
+			</div>
+			<div class="card-body">
+				Câu 9
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group">
+								<input
+									id="inputRealValue"
+									type="text"
+									class="form-control"
+									placeholder="Nhập vào 1 số thực"
+								/>
+							</div>
+							<button id="btnAddReal" class="btn btn-success">
+								Thêm số thực
+							</button>
+							<div
+								class="bg-warning mt-4"
+								style="line-height: 40px; border-radius: 4px"
+							>
+								<span class="ml-2">Dãy số thực nhập vào: </span>
+								<span id="showRealArray"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer bg-white">
+				<button id="btnQ9" class="btn btn-info">Đếm số nguyên</button>
+				<button id="btnQ10" class="btn btn-info">
+					So sánh số lượng số dương và số âm
+				</button>
+			</div>
+			<div class="card-footer text-muted">
+				<div id="result9">
+					<span>9. Số lượng số nguyên:</span>
+					<span id="showResult9"></span>
+				</div>
+				<div id="result10">
+					<span>10. Số nhiều hơn là: </span>
+					<span id="showResult10"></span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
